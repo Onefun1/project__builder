@@ -1,0 +1,125 @@
+body {
+  font-family: $main-font;
+  font-size: 14px;
+}
+html {
+  overflow-x: hidden;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+svg {
+  overflow: hidden;
+}
+
+button {
+  display: block;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1170px;
+  padding: 0 20px;
+
+  @include rm(480) {
+    width: 480px;
+  }
+
+  @include rm(640) {
+    width: 640px;
+  }
+
+  @include rm(768) {
+    width: 768px;
+  }
+
+  @include rm(1024) {
+    width: 1024px;
+  }
+
+  @include rm(1220) {
+    width: 1220px;
+  }
+}
+
+.title {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 35px;
+  text-align: center;
+
+  @include rm(640) {
+    font-size: 34px;
+    line-height: 45px;
+  }
+
+  @include rm(768) {
+    font-size: 38px;
+  }
+
+  @include rm(1024) {
+    font-weight: 500;
+    font-size: 40px;
+  }
+
+  @include rm(1220) {
+    font-size: 45px;
+  }
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-black {
+  font-weight: 900;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+br {
+  line-height: 1;
+  font-size: 0;
+}
+
+.btn {
+  display: block;
+  font-size: 13px;
+  width: 100%;
+  max-width: 120px;
+  line-height: 21px;
+  padding: 6px 16px;
+  box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid #ffffff;
+  transition: all 0.3s linear;
+
+  &:hover {
+    box-shadow: 0px 0px 0 1px #fff;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  &--color-secondary {
+    background-color: $secondary-color;
+    color: $main-color;
+    border: none;
+    &:hover {
+      background: #00f5e7;
+      box-shadow: none;
+    }
+  }
+}
+
+.shadow {
+  box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.1);
+}
